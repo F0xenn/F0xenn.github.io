@@ -1,0 +1,578 @@
+html{
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-y: auto;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-y: auto;
+}
+
+/*----------------------------*\
+      Page "index.php"
+\*----------------------------*/
+
+
+
+/*----------------------------*\
+      Page "signin.php"
+\*----------------------------*/
+
+.form_signin{
+  margin: auto;
+  margin-top: 75px;
+  background-color: rgba(0,0,0,0.7);
+  height: auto;
+  width: 400px;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.form_signin h2{
+  position: relative;
+  left: -35px;
+  color: #fff;
+  text-align: center;
+  background-color: rgb(3,105,168);
+  margin: 30px 0 30px 0;
+  padding: 5px 0;
+  font-size: 34px;
+  text-transform: uppercase;
+  width: 470px;
+  -moz-text-shadow: 0 7px 7px rgba(0,0,0,0.5);
+  -webkit-text-shadow: 0 7px 7px rgba(0,0,0,0.5);
+  text-shadow: 0 7px 7px rgba(0,0,0,0.5);
+}
+
+.form_signin h2:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 100%;
+  background-color: rgb(3,105,168);
+  transform-origin: top left;
+  transform: skewY(-50deg);
+}
+
+.form_signin h2:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 100%;
+  background-color: rgb(3,105,168);
+  transform-origin: top right;
+  transform: skewY(-50deg);
+}
+
+.form_signin input[type="text"], .form_signin input[type="email"], .form_signin input[type="password"]{
+  margin: 0;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 45px;
+  background: none;
+  border: none;
+  border: 1px solid rgba(0,196,212, 0.7);
+  border-radius: 10px;
+  color: white;
+  padding-left: 45px;
+  font-size: 20px;
+  transition: 0s;
+}
+
+.form_signin input[type="text"]::placeholder, .form_signin input[type="email"]::placeholder,
+.form_signin input[type="password"]::placeholder{
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form_signin .form-input-user::before{
+  content: '\f007';
+  position: absolute;
+  font-family: 'FontAwesome';
+  padding-left: 10px;
+  padding-top: 2px;
+  font-size: 36px;
+  color: rgb(3,105,168);
+}
+
+.form_signin .form-input-mail::before{
+  content: '\f0e0';
+  position: absolute;
+  font-family: 'FontAwesome';
+  padding-left: 10px;
+  padding-top: 8px;
+  font-size: 26px;
+  color: rgb(3,105,168);
+}
+
+.form_signin .form-input-mdp::before{
+  content: '\f023';
+  position: absolute;
+  font-family: 'FontAwesome';
+  padding-left: 12px;
+  padding-top: 5px;
+  font-size: 34px;
+  color: rgb(3,105,168);
+}
+
+.form_signin input[type="checkbox"]{
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.form_signin label[for="checkbox"]{
+  color: white;
+  font-size: 18px;
+}
+
+.form_signin label[for="checkbox"] a{
+  color: rgb(152,25,177);
+}
+
+.form_signin .button {
+  width: 160px;
+  height: 50px;
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  background-color: rgb(3,105,168);
+  border-radius: 3px;
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+}
+
+.form_signin .button:after, .button:before {
+  content: 'Envoyer';
+  position: absolute;
+  font-size: 25px;
+  margin-top: 0px;
+  transition: all 0.2s;
+  transform: translate(-50%, -50%);
+}
+
+.form_signin .button:hover:after {
+  margin-top: -70px;
+}
+
+.form_signin .button:before {
+  font-family: 'FontAwesome';
+  content: '\f00c';
+  font-size: 40px;
+  margin-top: -70px;
+}
+
+.form_signin .button:hover:before {
+  margin-top: 0px;
+}
+
+@media only screen and (max-width: 800px){
+
+  .form_signin{
+    width: 300px;
+  }
+
+  .form_signin input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+  }
+
+  .form_signin h2{
+    left: -20px;
+    width: 340px;
+  }
+
+  .form_signin h2:before{
+    display: none;
+  }
+
+  .form_signin h2:after{
+    display: none;
+  }
+
+}
+
+/*----------------------------*\
+      Page "login.php"
+\*----------------------------*/
+
+.form_login{
+  margin: auto;
+  margin-top: 75px;
+  background-color: rgba(0,0,0,0.7);
+  height: auto;
+  width: 350px;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.form_login h2{
+  position: relative;
+  left: -35px;
+  color: #fff;
+  text-align: center;
+  background-color: rgb(3,105,168);
+  margin: 30px 0 30px 0;
+  padding: 5px 0;
+  font-size: 34px;
+  text-transform: uppercase;
+  width: 420px;
+  -moz-text-shadow: 0 7px 7px rgba(0,0,0,0.5);
+  -webkit-text-shadow: 0 7px 7px rgba(0,0,0,0.5);
+  text-shadow: 0 7px 7px rgba(0,0,0,0.5);
+}
+
+.form_login h2:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 100%;
+  background-color: rgb(3,105,168);
+  transform-origin: top left;
+  transform: skewY(-50deg);
+}
+
+.form_login h2:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 100%;
+  background-color: rgb(3,105,168);
+  transform-origin: top right;
+  transform: skewY(-50deg);
+}
+
+.form_login p{
+  margin: auto;
+  padding: 10px;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+}
+
+.form_login input[type="text"], .form_login input[type="email"], .form_login input[type="password"]{
+  margin: 0;
+  width: 100%;
+  height: 45px;
+  background: none;
+  border: none;
+  border: 1px solid rgba(0,196,212, 0.7);
+  border-radius: 10px;
+  color: white;
+  padding-left: 45px;
+  font-size: 20px;
+  transition: 0s;
+}
+
+.form_login input[type="password"]{
+  margin-bottom: 15px;
+}
+
+.form_login input[type="text"]::placeholder, .form_login input[type="email"]::placeholder,
+.form_login input[type="password"]::placeholder{
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form_login .form-input-user::before{
+  content: '\f007';
+  position: absolute;
+  font-family: 'FontAwesome';
+  padding-left: 10px;
+  padding-top: 2px;
+  font-size: 36px;
+  color: rgb(3,105,168);
+}
+
+.form_login .form-input-mail::before{
+  content: '\f0e0';
+  position: absolute;
+  font-family: 'FontAwesome';
+  padding-left: 10px;
+  padding-top: 8px;
+  font-size: 26px;
+  color: rgb(3,105,168);
+}
+
+.form_login .form-input-mdp::before{
+  content: '\f023';
+  position: absolute;
+  font-family: 'FontAwesome';
+  padding-left: 12px;
+  padding-top: 5px;
+  font-size: 34px;
+  color: rgb(3,105,168);
+}
+
+.form_login .text_ou{
+  color: white;
+  font-size: 30px;
+  padding: 2px 2px;
+}
+
+.form_login .text_ou:after, .text_ou:before{
+  content: '───────';
+  color: white;
+  width: 100%;
+  font-size: 30px;
+}
+
+.form_login .border_{
+  padding: 15px 4px;
+}
+
+.form_login .border_:after, .border_:before{
+  content: '────────';
+  color: white;
+  width: 100%;
+  font-size: 30px;
+}
+
+.form_login .button {
+  width: 160px;
+  height: 50px;
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  background-color: rgb(3,105,168);
+  border-radius: 3px;
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+}
+
+.form_login .button:after, .button:before {
+  content: 'Envoyer';
+  position: absolute;
+  font-size: 25px;
+  margin-top: 0px;
+  transition: all 0.2s;
+  transform: translate(-50%, -50%);
+}
+
+.form_login .button:hover:after {
+  margin-top: -70px;
+}
+
+.form_login .button:before {
+  font-family: 'FontAwesome';
+  content: '\f00c';
+  font-size: 40px;
+  margin-top: -70px;
+}
+
+.form_login .button:hover:before {
+  margin-top: 0px;
+}
+
+@media only screen and (max-width: 800px){
+
+  .form_login{
+    width: 300px;
+  }
+
+  .form_login .text_ou{
+    color: white;
+    font-size: 28px;
+    padding: 2px 9px;
+  }
+
+  .form_login .text_ou:after, .text_ou:before{
+    content: '──────';
+    color: white;
+    width: 100%;
+    font-size: 28px;
+  }
+
+  .form_login .border_{
+    border-bottom: 3px solid white;
+  }
+
+  .form_login .border_:after, .border_:before{
+    display: none;
+  }
+
+  .form_login h2{
+    left: -20px;
+    width: 340px;
+  }
+
+  .form_login h2:before{
+    display: none;
+  }
+
+  .form_login h2:after{
+    display: none;
+  }
+
+}
+
+/*----------------------------*\
+      Page "contact.php"
+\*----------------------------*/
+
+.form_contact{
+  margin: auto;
+  margin-top: 75px;
+  background-color: rgba(0,0,0,0.7);
+  height: auto;
+  width: 700px;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.form_contact h2{
+  position: relative;
+  left: -35px;
+  color: #fff;
+  text-align: center;
+  background-color: rgb(3,105,168);
+  margin: 30px 0 30px 0;
+  padding: 5px 0;
+  font-size: 34px;
+  text-transform: uppercase;
+  width: 770px;
+  -moz-text-shadow: 0 7px 7px rgba(0,0,0,0.5);
+  -webkit-text-shadow: 0 7px 7px rgba(0,0,0,0.5);
+  text-shadow: 0 7px 7px rgba(0,0,0,0.5);
+}
+
+.form_contact h2:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 100%;
+  background-color: rgb(3,105,168);
+  transform-origin: top left;
+  transform: skewY(-50deg);
+}
+
+.form_contact h2:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 100%;
+  background-color: rgb(3,105,168);
+  transform-origin: top right;
+  transform: skewY(-50deg);
+}
+
+.form_contact input[type="text"], .form_contact input[type="email"]{
+  margin: 0;
+  margin-bottom: 15px;
+  height: 45px;
+  background: none;
+  border: none;
+  border: 1px solid rgba(0,196,212, 0.7);
+  border-radius: 10px;
+  color: white;
+  padding-left: 5px;
+  font-size: 20px;
+  width: 49%;
+}
+
+.form_contact input[name="nom"], .form_contact input[name="objet"]{
+  margin-right: 5px;
+}
+
+.form_contact input[type="text"]::placeholder, .form_contact input[type="email"]::placeholder, .form_contact textarea::placeholder{
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form_contact textarea{
+  margin: 0;
+  background: none;
+  border: none;
+  border: 1px solid rgba(0,196,212, 0.7);
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  width: 100%;
+  height: 150px;
+}
+
+.form_contact .button {
+  width: 160px;
+  height: 50px;
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  background-color: rgb(3,105,168);
+  border-radius: 3px;
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+}
+
+.form_contact .button:after, .button:before {
+  content: 'Envoyer';
+  position: absolute;
+  font-size: 25px;
+  margin-top: 0px;
+  transition: all 0.2s;
+  transform: translate(-50%, -50%);
+}
+
+.form_contact .button:hover:after {
+  margin-top: -70px;
+}
+
+.form_contact .button:before {
+  font-family: 'FontAwesome';
+  content: '\f003';
+  font-size: 40px;
+  margin-top: -70px;
+}
+
+.form_contact .button:hover:before {
+  margin-top: 0px;
+}
+
+@media only screen and (max-width: 800px){
+
+  .form_contact{
+    width: 300px;
+  }
+
+  .form_contact input[type="text"], .form_contact input[type="email"]{
+    width: 100%;
+  }
+
+  .form_contact h2{
+    left: -20px;
+    width: 340px;
+  }
+
+  .form_contact h2:before{
+    display: none;
+  }
+
+  .form_contact h2:after{
+    display: none;
+  }
+
+}
